@@ -1,0 +1,33 @@
+<block wx:if='{{!isHidden}}'>
+  <camera hidden='{{isHidden}}' device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;">
+    <cover-view>
+        <cover-image bindtap='previewHandle' class='previewIcon' src='{{camera.previewIcon}}'></cover-image>
+    </cover-view>
+    <cover-view class='flexDisplay'>
+        <cover-view class='item' bindtap='chooseImage'>
+          <cover-image class='img takePhotoIcon' src='{{camera.takePhotoIcon}}'></cover-image>
+        </cover-view>
+        <cover-view bindtap="takePhoto" class='item'>
+          <cover-image class='img cameraIcon' src='{{camera.cameraIcon}}'></cover-image>
+        </cover-view>
+        <cover-view class='item'>
+          <cover-image class='img flashIcon' src='{{camera.flashOffIcon}}'></cover-image>
+        </cover-view>
+    </cover-view>
+    <cover-view class='flexDisplay'>
+        <cover-view class='item'>文字模拟一</cover-view>
+        <cover-view class='item'>文字模拟二</cover-view>
+        <cover-view class='item'>文字模拟三</cover-view>
+        <cover-view class='item'>文字模拟四</cover-view>
+    </cover-view>
+  </camera>
+</block>
+   <block wx:else>
+  <view class='previewImg'>
+      <image class='returnCameraIcon' bindtap='returnCamera' src='{{camera.returnCameraIcon}}'></image>
+      <image mode="widthFix" class='image' src='{{camera.previewIcon}}'></image>
+  </view>
+</block>    
+
+
+ <!-- <image mode="widthFix" src="{{src}}"></image>  -->

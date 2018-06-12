@@ -1,0 +1,51 @@
+/* pages/camera/camera.wxss */
+ page{
+   background-color: #000;
+ }
+ .previewIcon{
+   width: 150rpx;
+   height: 220rpx
+ }
+ .takePhotoIcon{
+  width: 80rpx;
+  height: 80rpx;
+}
+.flashIcon{
+  width: 76rpx;
+  height: 76rpx;
+}
+.cameraIcon{
+  width: 104rpx;
+  height: 104rpx;
+} 
+.flexDisplay{
+  display: flex;
+  margin-top: 50rpx;
+}
+.item{
+  flex-grow:1;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  font-size: 28rpx;
+  text-align: center;
+}
+.item .img{
+  margin:0 auto;
+}
+.previewImg{
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.previewImg .image{
+  width: 100%;
+  height: 300px;
+}
+.returnCameraIcon{
+  position: absolute;
+  top:10rpx;
+  left: 10rpx;
+  width: 78rpx;
+  height: 78rpx;
+}

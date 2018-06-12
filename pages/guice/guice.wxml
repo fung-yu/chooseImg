@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator url="/pages/index/index?guide=1" hover-class="none">
+    <view class="chooseView">
+      从相册中选择
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "AI识酒",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#000000",
+  "usingComponents": {
+    "camera":"../../components/camera/camera"
+  }
+}
